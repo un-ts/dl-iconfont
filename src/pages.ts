@@ -1,6 +1,8 @@
 import puppeteer from "puppeteer";
 
 const URL = "https://www.iconfont.cn/";
+// const PROJECT_URL =
+//   "https://www.iconfont.cn/manage/index?manage_type=myprojects";
 const VIEWPORT = { height: 1920, width: 1280 };
 
 (async () => {
@@ -36,7 +38,17 @@ const VIEWPORT = { height: 1920, width: 1280 };
   );
   await githubLoginEleDom?.click();
 
+  // login
   await page.waitForNavigation({ waitUntil: "networkidle0" });
+  const userName = process.env.login;
+  const password = process.env.password;
+  await page.type("input[name=login]", userName as string);
+  await page.type("input[name=password]", password as string);
+  await page.click("input[name=commit]");
+  await page.waitForNavigation({ waitUntil: "networkidle0" });
+
+  // go to project
+  await page.click(".site-nav a[href=/manage/index]");
 
   // screenshot
   await page.screenshot({
