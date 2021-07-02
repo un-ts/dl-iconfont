@@ -1,22 +1,6 @@
 {
+  "extends": "@1stg/tsconfig/node.json",
   "compilerOptions": {
-    "baseUrl": "src",
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
-    "incremental": true,
-    "jsx": "preserve",
-    "lib": ["ESNext"],
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "stripInternal": true,
-    "target": "ES2017"
+    "baseUrl": "src"
   }
 }
