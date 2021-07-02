@@ -6,8 +6,8 @@
   "author": "Zhenggang Su <zgsu@alauda.io>",
   "license": "MIT",
   "scripts": {
-    "start": "node --loader ts-node/esm src/pages.ts",
-    "download": "node --loader ts-node/esm src/download.ts"
+    "start": "ts-node src/pages.ts",
+    "download": "ts-node src/download.ts"
   },
   "dependencies": {
     "offline-iconfont": "^1.1.0",
