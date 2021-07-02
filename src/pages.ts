@@ -28,6 +28,6 @@ const VIEWPORT = { height: 1920, width: 1280 };
   await signInElmDom?.click();
   await page.waitForNavigation({ waitUntil: "load" });
 
-  // await page.screenshot({path: 'screenshot/example.png', fullPage: true});
+  await page.screenshot({ path: "screenshot/example.png", fullPage: true });
   await browser.close();
 })();
