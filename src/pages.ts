@@ -49,7 +49,6 @@ const VIEWPORT = { height: 1920, width: 1280 };
   await page.waitForNavigation({ waitUntil: "networkidle0" });
 
   // go to project
-  // await page.click(".site-nav li [href*=/manage/index]");
   const page2 = await browser.newPage();
   await page2.goto(PROJECT_URL, { waitUntil: "networkidle0" });
   page2.setDefaultNavigationTimeout(0);
@@ -65,6 +64,8 @@ const VIEWPORT = { height: 1920, width: 1280 };
   const value = await (element as puppeteer.ElementHandle).evaluate(
     (el) => el.textContent
   );
+
+  // download icon js file
   download({
     cssUrl: value as string,
     // @ts-ignore
