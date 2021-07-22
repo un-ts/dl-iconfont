@@ -7,8 +7,9 @@ const PROJECT_URL =
 const VIEWPORT = { height: 1920, width: 1280 };
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
+  page.setDefaultNavigationTimeout(0);
   await page.goto(URL, { waitUntil: "networkidle0" });
 
   // Resize the viewport to screenshot elements outside of the viewport
@@ -33,7 +34,9 @@ const VIEWPORT = { height: 1920, width: 1280 };
 
   // find github login
   await page.waitForSelector(".show-dialog", { visible: true });
-  const githubLoginEleDom = await page.$(".mp-e2e-content .github");
+  const githubLoginEleDom = await page.waitForSelector(
+    ".mp-e2e-content .github"
+  );
   await (githubLoginEleDom as puppeteer.ElementHandle).click();
 
   // login
@@ -49,6 +52,7 @@ const VIEWPORT = { height: 1920, width: 1280 };
   // await page.click(".site-nav li [href*=/manage/index]");
   const page2 = await browser.newPage();
   await page2.goto(PROJECT_URL, { waitUntil: "networkidle0" });
+  page2.setDefaultNavigationTimeout(0);
   await page2.evaluate(() => {
     localStorage.setItem("_iconfont_view_type_", "fontclass");
     localStorage.setItem("_iconfont_view_code_", "show");
