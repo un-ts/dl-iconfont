@@ -1,28 +1,74 @@
 {
-  "name": "puppeteer-playground",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/EdisonSu768/puppeteer-playground.git",
+  "name": "dl-iconfont",
+  "version": "0.0.0",
+  "type": "module",
+  "repository": "https://github.com/rx-ts/dl-iconfont.git",
   "author": "Zhenggang Su <zgsu@alauda.io>",
+  "contributors": [
+    "JounQin <admin@1stg.me>"
+  ],
   "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "bin": {
+    "dli": "./bin/cli.js",
+    "dl-iconfont": "./bin/cli.js",
+    "iconfont-dl": "./bin/cli.js"
+  },
+  "exports": {
+    "import": "./lib/index.js",
+    "require": "./lib/index.cjs"
+  },
+  "keywords": [
+    "download-iconfont",
+    "dl-iconfont",
+    "iconfont",
+    "iconfont-dl",
+    "iconfont-downloader"
+  ],
   "scripts": {
-    "start": "ts-node src/pages.ts"
+    "build": "run-p build:*",
+    "build:r": "r -f cjs",
+    "build:tsc": "tsc -b",
+    "dev": "yarn ts ./src/cli.ts",
+    "lint": "run-p lint:*",
+    "lint:es": "eslint . -f friendly",
+    "lint:tsc": "tsc --noEmit",
+    "prepare": "simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
+    "prerelease": "yarn build",
+    "release": "changeset publish",
+    "ts": "node --loader ts-node/esm",
+    "typecov": "type-coverage"
   },
   "dependencies": {
-    "offline-iconfont": "^1.1.0",
-    "puppeteer": "^10.1.0"
+    "dotenv": "^10.0.0",
+    "got": "^11.8.2",
+    "puppeteer": "^10.2.0",
+    "tslib": "^2.3.1"
   },
   "devDependencies": {
-    "@1stg/common-config": "^2.3.1",
-    "@types/puppeteer": "^5.4.3",
-    "ts-node": "^10.0.0",
+    "@1stg/lib-config": "^4.0.0",
+    "@changesets/changelog-github": "^0.4.1",
+    "@changesets/cli": "^2.17.0",
+    "@types/puppeteer": "^5.4.4",
+    "ts-node": "^10.2.1",
     "tslint": "^6.1.3",
-    "typescript": "^4.3.5"
+    "type-coverage": "^2.18.2",
+    "typescript": "^4.4.3"
   },
-  "resolutions": {
-    "trim": "0.0.1"
+  "publishConfig": {
+    "access": "public"
   },
-  "eslintConfig": {
-    "extends": "@1stg/eslint-config/loose"
+  "typeCoverage": {
+    "atLeast": 100,
+    "cache": true,
+    "detail": true,
+    "ignoreAsAssertion": true,
+    "ignoreNested": true,
+    "ignoreNonNullAssertion": true,
+    "showRelativePath": true,
+    "strict": true,
+    "update": true
   }
 }

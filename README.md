@@ -1,8 +1,47 @@
-# puppeteer-playground
+# dl-iconfont
 
-## how to use
+An iconfont downloader for [iconfont](https://www.iconfont.cn) via [puppeteer](https://github.com/puppeteer/puppeteer).
 
- - 1.export login=foo && export password=bar (`which is your github account to login to inconfont`)
- - 2.yarn start
+## Install
 
-that's all, enjoy it
+```sh
+# yarn
+yarn global add dl-iconfont
+
+# npm
+npm i -g dl-iconfont
+```
+
+## Usage
+
+### CLI
+
+#### Environments
+
+1. `ICONFONT_PROJECT_ID` (required)
+2. `ICONFONT_LOGIN` (required)
+3. `ICONFONT_PASSWORD` (required)
+4. `ICONFONT_DOWNLOAD_FILE` (optional)
+5. `PUPPETEER_HEADLESS` (optional)
+
+### Command
+
+```sh
+# [iconfont.js] is optional, it can be provided via env `ICONFONT_DOWNLOAD_FILE` too
+dli iconfont.js
+```
+
+### API
+
+```ts
+import { fetchJsUrl, download } from 'dl-iconfont'
+
+const jsUrl = await fetchJsUrl({ projectId, login, password, headless })
+await download(jsUrl, 'iconfont.js')
+```
+
+## License
+
+[MIT][]
+
+[mit]: http://opensource.org/licenses/MIT
