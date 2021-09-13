@@ -20,6 +20,9 @@
     "import": "./lib/index.js",
     "require": "./lib/index.cjs"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "download-iconfont",
     "dl-iconfont",
