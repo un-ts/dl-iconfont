@@ -1,7 +1,8 @@
 {
-  "extends": "@1stg/tsconfig/node.json",
+  "extends": "@1stg/tsconfig/dom-lib",
   "compilerOptions": {
-    "baseUrl": "src",
-    "lib": ["DOM"]
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "lib"
   }
 }
