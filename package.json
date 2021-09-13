@@ -2,6 +2,7 @@
   "name": "dl-iconfont",
   "version": "0.1.0",
   "type": "module",
+  "description": "An iconfont downloader via puppeteer.",
   "repository": "https://github.com/rx-ts/dl-iconfont.git",
   "author": "Zhenggang Su <zgsu@alauda.io>",
   "contributors": [
