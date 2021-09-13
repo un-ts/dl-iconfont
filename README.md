@@ -24,7 +24,7 @@ An iconfont downloader for [iconfont][] via [puppeteer][].
 - [Usage](#usage)
   - [CLI](#cli)
     - [Environments](#environments)
-  - [Command](#command)
+    - [Command](#command)
   - [API](#api)
 - [Changelog](#changelog)
 - [License](#license)
@@ -53,7 +53,7 @@ npm i -g dl-iconfont
 4. `ICONFONT_DOWNLOAD_FILE` (optional)
 5. `PUPPETEER_HEADLESS` (optional)
 
-### Command
+#### Command
 
 ```sh
 # [iconfont.js] is optional, it can be provided via env `ICONFONT_DOWNLOAD_FILE` too
