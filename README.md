@@ -16,6 +16,8 @@ npm i -g dl-iconfont
 
 ### CLI
 
+[dotenv](https://github.com/motdotla/dotenv) is used inside the CLI, so you can simply create a `.env` file.
+
 #### Environments
 
 1. `ICONFONT_PROJECT_ID` (required)
@@ -39,6 +41,10 @@ import { fetchJsUrl, download } from 'dl-iconfont'
 const jsUrl = await fetchJsUrl({ projectId, login, password, headless })
 await download(jsUrl, 'iconfont.js')
 ```
+
+## Changelog
+
+Detailed changes for each release are documented in [CHANGELOG.md](./CHANGELOG.md).
 
 ## License
 
