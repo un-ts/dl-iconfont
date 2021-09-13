@@ -57,7 +57,6 @@ export const fetchJsUrl = async ({
     `${ICONFONT_URL}manage/index?manage_type=myprojects&projectId=${projectId}`,
     { waitUntil: 'networkidle0' },
   )
-  const element = await page.waitForSelector('#J_cdn_type_svgsymbol')
 
   if (await page.$('.project-code-mask')) {
     const refresh = await page.$('.project-code-top .cover-btn:last-child')
@@ -67,6 +66,7 @@ export const fetchJsUrl = async ({
     }
   }
 
+  const element = await page.waitForSelector('#J_cdn_type_svgsymbol')
   const jsUrl = await element!.evaluate(el => el.textContent)
 
   await browser.close()
