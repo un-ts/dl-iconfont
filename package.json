@@ -54,7 +54,7 @@
   "devDependencies": {
     "@1stg/lib-config": "^4.0.0",
     "@changesets/changelog-github": "^0.4.2",
-    "@changesets/cli": "^2.19.0",
+    "@changesets/cli": "^2.20.0",
     "@types/puppeteer": "^5.4.4",
     "ts-node": "^10.4.0",
     "tslint": "^6.1.3",
