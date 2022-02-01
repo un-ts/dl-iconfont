@@ -10,7 +10,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=v12.22.8"
+    "node": ">=v12.22.9"
   },
   "bin": {
     "dli": "./bin/cli.js",
