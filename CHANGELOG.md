@@ -1,5 +1,15 @@
 # dl-iconfont
 
+## 0.2.0
+
+### Minor Changes
+
+- [#36](https://github.com/un-ts/dl-iconfont/pull/36) [`eca01ef`](https://github.com/un-ts/dl-iconfont/commit/eca01ef6e711acc38b417238b88bcc056a0e164b) Thanks [@JounQin](https://github.com/JounQin)! - feat: use top level await
+
+### Patch Changes
+
+- [#36](https://github.com/un-ts/dl-iconfont/pull/36) [`eca01ef`](https://github.com/un-ts/dl-iconfont/commit/eca01ef6e711acc38b417238b88bcc056a0e164b) Thanks [@JounQin](https://github.com/JounQin)! - fix: add missing package fields
+
 ## 0.1.1
 
 ### Patch Changes
