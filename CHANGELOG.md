@@ -1,5 +1,13 @@
 # dl-iconfont
 
+## 0.3.0
+
+### Minor Changes
+
+- [#38](https://github.com/un-ts/dl-iconfont/pull/38) [`6d61971`](https://github.com/un-ts/dl-iconfont/commit/6d619715fff918b6adac847fb600d3654a4f4dc8) Thanks [@JounQin](https://github.com/JounQin)! - feat: add commander support to override env easily
+
+* [#38](https://github.com/un-ts/dl-iconfont/pull/38) [`6d61971`](https://github.com/un-ts/dl-iconfont/commit/6d619715fff918b6adac847fb600d3654a4f4dc8) Thanks [@JounQin](https://github.com/JounQin)! - chore!: rename `ICONFONT_PROJECT_ID` env to `ICONFONT_PROJECT`
+
 ## 0.2.0
 
 ### Minor Changes
