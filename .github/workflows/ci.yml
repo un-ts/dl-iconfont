@@ -28,7 +28,12 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Build, Lint and test
-        run: yarn run-p build lint typecov
+        run: |
+          yarn run-p build lint typecov
+          yarn dev iconfont.js
         env:
           EFF_NO_LINK_RULES: true
           PARSER_NO_WATCH: true
+          ICONFONT_LOGIN: ${{ secrets.ICONFONT_LOGIN }}
+          ICONFONT_PASSWORD: ${{ secrets.ICONFONT_PASSWORD }}
+          ICONFONT_PROJECT: ${{ secrets.ICONFONT_PROJECT }}
