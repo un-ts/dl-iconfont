@@ -4,9 +4,9 @@
   "type": "module",
   "description": "An iconfont downloader via puppeteer.",
   "repository": "https://github.com/un-ts/dl-iconfont.git",
-  "author": "Zhenggang Su <zgsu@alauda.io>",
+  "author": "Zhenggang Su (https://github.com/Edisonsu768) <zgsu@alauda.io>",
   "contributors": [
-    "JounQin <admin@1stg.me>"
+    "JounQin (https://www.1stG.me) <admin@1stg.me>"
   ],
   "donate": {
     "recipients": [

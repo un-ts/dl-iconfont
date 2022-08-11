@@ -22,6 +22,8 @@ An [iconfont][] downloader via [puppeteer][].
     - [Environments](#environments)
     - [Command](#command)
   - [API](#api)
+- [Sponsors](#sponsors)
+- [Backers](#backers)
 - [Changelog](#changelog)
 - [License](#license)
 
@@ -43,11 +45,11 @@ npm i -g dl-iconfont
 
 #### Environments
 
-1. `ICONFONT_PROJECT` (required)
-2. `ICONFONT_LOGIN` (required)
-3. `ICONFONT_PASSWORD` (required)
-4. `ICONFONT_DOWNLOAD_FILE` (optional)
-5. `PUPPETEER_HEADLESS` (optional)
+1. `ICONFONT_PROJECT` (optional, can be provided via `-p` option)
+2. `ICONFONT_LOGIN` (optional, can be provided via `-l` option)
+3. `ICONFONT_PASSWORD` (optional, can be provided via `-p` option)
+4. `ICONFONT_DOWNLOAD_FILE` (optional, can be provided via `downloadFile` argument)
+5. `PUPPETEER_HEADLESS` (optional, can be provided via `-h` option)
 
 #### Command
 
@@ -71,9 +73,22 @@ Options:
 ```ts
 import { fetchJsUrl, download } from 'dl-iconfont'
 
-const jsUrl = await fetchJsUrl({ projectId, login, password, headless })
+const jsUrl = await fetchJsUrl({ project, login, password, headless })
+
 await download(jsUrl, 'iconfont.js')
 ```
+
+## Sponsors
+
+| 1stG                                                                                                                               | RxTS                                                                                                                               | UnTS                                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [![1stG Open Collective backers and sponsors](https://opencollective.com/1stG/organizations.svg)](https://opencollective.com/1stG) | [![RxTS Open Collective backers and sponsors](https://opencollective.com/rxts/organizations.svg)](https://opencollective.com/rxts) | [![UnTS Open Collective backers and sponsors](https://opencollective.com/unts/organizations.svg)](https://opencollective.com/unts) |
+
+## Backers
+
+| 1stG                                                                                                                             | RxTS                                                                                                                             | UnTS                                                                                                                             |
+| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [![1stG Open Collective backers and sponsors](https://opencollective.com/1stG/individuals.svg)](https://opencollective.com/1stG) | [![RxTS Open Collective backers and sponsors](https://opencollective.com/rxts/individuals.svg)](https://opencollective.com/rxts) | [![UnTS Open Collective backers and sponsors](https://opencollective.com/unts/individuals.svg)](https://opencollective.com/unts) |
 
 ## Changelog
 
@@ -81,9 +96,10 @@ Detailed changes for each release are documented in [CHANGELOG.md](./CHANGELOG.m
 
 ## License
 
-[MIT][]
+[MIT][] © [Edisonsu768][]
 
 [dotenv]: https://github.com/motdotla/dotenv
+[edisonsu768]: https://github.com/Edisonsu768
 [iconfont]: https://www.iconfont.cn
 [mit]: http://opensource.org/licenses/MIT
 [puppeteer]: https://github.com/puppeteer/puppeteer
