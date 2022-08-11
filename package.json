@@ -1,6 +1,6 @@
 {
   "name": "dl-iconfont",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "type": "module",
   "description": "An iconfont downloader via puppeteer.",
   "repository": "https://github.com/un-ts/dl-iconfont.git",

@@ -1,5 +1,11 @@
 # dl-iconfont
 
+## 0.3.1
+
+### Patch Changes
+
+- [#40](https://github.com/un-ts/dl-iconfont/pull/40) [`b379d2c`](https://github.com/un-ts/dl-iconfont/commit/b379d2c2a4c80295ac1367624649457404632325) Thanks [@JounQin](https://github.com/JounQin)! - docs: add license and sponsors sections
+
 ## 0.3.0
 
 ### Minor Changes
