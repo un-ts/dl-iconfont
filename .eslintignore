@@ -1,3 +1,4 @@
 iconfont.js
 lib
+!/.github
 !/.*.cjs
