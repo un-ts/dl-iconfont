@@ -1,4 +1,4 @@
-import fs from 'node:fs'
+import fs from 'node:fs/promises'
 
 import got from 'got'
 import puppeteer from 'puppeteer'
@@ -7,34 +7,33 @@ const ICONFONT_URL = 'https://www.iconfont.cn/'
 
 const VIEWPORT = { height: 1920, width: 1280 }
 
-export const fetchJsUrl = async ({
-  projectId,
-  login,
-  password,
-  headless = true,
-}: {
-  projectId: string
+export interface FetchOptions {
+  project: string
   login: string
   password: string
   headless?: boolean
-}) => {
-  if (!projectId || !login || !password) {
-    throw new Error('`projectId`, `login` and `password` must all be provided')
+}
+
+export const fetchJsUrl = async ({
+  project,
+  login,
+  password,
+  headless = true,
+}: FetchOptions) => {
+  if (!project || !login || !password) {
+    throw new Error('`project`, `login` and `password` must all be provided')
   }
 
-  const browser = await puppeteer.launch({ headless })
-  const page = await browser.newPage()
-  page.setDefaultNavigationTimeout(0)
-  await page.goto(ICONFONT_URL, { waitUntil: 'networkidle0' })
-
-  // Resize the viewport to screenshot elements outside of the viewport
-  const body = await page.$('body')
-  const boundingBox = await body!.boundingBox()
-  await page.setViewport({
-    ...VIEWPORT,
-    width: Math.max(VIEWPORT.width, Math.ceil(boundingBox!.width)),
-    height: Math.max(VIEWPORT.height, Math.ceil(boundingBox!.height)),
+  const browser = await puppeteer.launch({
+    headless,
+    defaultViewport: VIEWPORT,
   })
+
+  const page = await browser.newPage()
+
+  page.setDefaultNavigationTimeout(0)
+
+  await page.goto(ICONFONT_URL, { waitUntil: 'networkidle0' })
 
   await page.click('header .signin')
 
@@ -54,7 +53,7 @@ export const fetchJsUrl = async ({
 
   // go to project
   await page.goto(
-    `${ICONFONT_URL}manage/index?manage_type=myprojects&projectId=${projectId}`,
+    `${ICONFONT_URL}manage/index?manage_type=myprojects&projectId=${project}`,
     { waitUntil: 'networkidle0' },
   )
 
@@ -82,5 +81,5 @@ export const download = async (url: string, file: string) => {
       throw new Error('invalid url for downloading')
     }
   }
-  return fs.promises.writeFile(file, await got(url).buffer())
+  return fs.writeFile(file, got.stream(url))
 }

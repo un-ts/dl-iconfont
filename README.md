@@ -43,7 +43,7 @@ npm i -g dl-iconfont
 
 #### Environments
 
-1. `ICONFONT_PROJECT_ID` (required)
+1. `ICONFONT_PROJECT` (required)
 2. `ICONFONT_LOGIN` (required)
 3. `ICONFONT_PASSWORD` (required)
 4. `ICONFONT_DOWNLOAD_FILE` (optional)
@@ -52,8 +52,18 @@ npm i -g dl-iconfont
 #### Command
 
 ```sh
-# [iconfont.js] is optional, it can be provided via env `ICONFONT_DOWNLOAD_FILE` too
-dli iconfont.js
+Usage: dli [options] [downloadFile]
+
+Arguments:
+  downloadFile              Filename path to be downloaded
+
+Options:
+  -V, --version             output the version number
+  -p, --project <string>    Project ID from iconfont.cn
+  -l, --login <string>      User login (mobile number) for iconfont.cn
+  -p, --password <string>   User password for iconfont.cn
+  -h, --headless <boolean>  Run in headless mode (default: true)
+  --help                    display help for command
 ```
 
 ### API
