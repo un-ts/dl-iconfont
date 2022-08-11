@@ -106,7 +106,7 @@
   "size-limit": [
     {
       "path": "lib/cli.js",
-      "limit": "550B"
+      "limit": "750B"
     }
   ],
   "typeCoverage": {
