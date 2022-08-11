@@ -5,3 +5,4 @@ node_modules
 iconfont.js
 .*cache
 *.log
+*.tsbuildinfo

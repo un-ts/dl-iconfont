@@ -1,14 +1,10 @@
 # dl-iconfont
 
-[![GitHub Actions](https://github.com/rx-ts/dl-iconfont/workflows/CI/badge.svg)](https://github.com/rx-ts/dl-iconfont/actions/workflows/ci.yml)
-[![Codacy Grade](https://img.shields.io/codacy/grade/cd566ae9ad834d838695c65b3a362b96)](https://www.codacy.com/gh/rx-ts/dl-iconfont)
-[![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Frx-ts%2Fdl-iconfont%2Fmain%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
+[![GitHub Actions](https://github.com/un-ts/dl-iconfont/workflows/CI/badge.svg)](https://github.com/un-ts/dl-iconfont/actions/workflows/ci.yml)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/un-ts/dl-iconfont.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/un-ts/dl-iconfont/context:javascript)
+[![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fun-ts%2Fdl-iconfont%2Fmain%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
 [![npm](https://img.shields.io/npm/v/dl-iconfont.svg)](https://www.npmjs.com/package/dl-iconfont)
-[![GitHub Release](https://img.shields.io/github/release/rx-ts/dl-iconfont)](https://github.com/rx-ts/dl-iconfont/releases)
-
-[![David Peer](https://img.shields.io/david/peer/rx-ts/dl-iconfont.svg)](https://david-dm.org/rx-ts/dl-iconfont?type=peer)
-[![David](https://img.shields.io/david/rx-ts/dl-iconfont.svg)](https://david-dm.org/rx-ts/dl-iconfont)
-[![David Dev](https://img.shields.io/david/dev/rx-ts/dl-iconfont.svg)](https://david-dm.org/rx-ts/dl-iconfont?type=dev)
+[![GitHub Release](https://img.shields.io/github/release/un-ts/dl-iconfont)](https://github.com/un-ts/dl-iconfont/releases)
 
 [![Conventional Commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
