@@ -49,10 +49,14 @@
     "dl-iconfont": "./bin/cli.js",
     "iconfont-dl": "./bin/cli.js"
   },
+  "main": "lib/index.cjs",
+  "module": "lib",
   "exports": {
+    "types": "./lib/index.d.ts",
     "import": "./lib/index.js",
     "require": "./lib/index.cjs"
   },
+  "types": "lib",
   "files": [
     "lib"
   ],
