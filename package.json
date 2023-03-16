@@ -92,7 +92,7 @@
     "@changesets/cli": "^2.24.2",
     "@types/puppeteer": "^5.4.6",
     "@types/web": "^0.0.71",
-    "commander": "^9.4.0",
+    "commander": "^9.5.0",
     "size-limit": "^8.0.0",
     "size-limit-preset-node-lib": "^0.1.0",
     "tsx": "^3.8.1",
