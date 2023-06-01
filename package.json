@@ -90,7 +90,7 @@
     "@1stg/lib-config": "^9.0.2",
     "@changesets/changelog-github": "^0.4.6",
     "@changesets/cli": "^2.24.2",
-    "@types/puppeteer": "^5.4.6",
+    "@types/puppeteer": "^5.4.7",
     "@types/web": "^0.0.71",
     "commander": "^9.4.0",
     "size-limit": "^8.0.0",
