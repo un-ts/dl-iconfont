@@ -94,7 +94,7 @@
     "@types/web": "^0.0.71",
     "commander": "^9.4.0",
     "size-limit": "^8.0.0",
-    "size-limit-preset-node-lib": "^0.1.0",
+    "size-limit-preset-node-lib": "^0.3.0",
     "tsx": "^3.8.1",
     "type-coverage": "^2.22.0",
     "typescript": "^4.7.4",
