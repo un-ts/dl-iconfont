@@ -1,7 +1,7 @@
 name: Size Limit
 
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - main
 
@@ -9,12 +9,14 @@ jobs:
   size-limit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js 16
-        uses: actions/setup-node@v3
+      - name: Setup Node.js LTS
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          # node-version: lts/*
+          # workaround for eslint-plugin-jsdoc@39 on main branch
+          node-version: 18
           cache: yarn
 
       - name: Install Dependencies

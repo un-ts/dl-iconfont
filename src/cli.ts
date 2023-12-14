@@ -59,14 +59,14 @@ await program
 
     if (downloadFile) {
       console.log(
-        `[dl-iconfont]: downloading \`${jsUrl!}\` into \`${downloadFile}\``,
+        `[dl-iconfont]: downloading \`${jsUrl}\` into \`${downloadFile}\``,
       )
-      await download(jsUrl!, downloadFile)
+      await download(jsUrl, downloadFile)
     } else {
       console.log(
         '[dl-iconfont] no `downloadFile` provided, you can use the environment variable or `dli ICONFONT_DOWNLOAD_FILE` to download the js file automatically',
       )
-      console.log(`[dl-iconfont]: ${jsUrl!}`)
+      console.log(`[dl-iconfont]: ${jsUrl}`)
     }
   })
   .parseAsync(process.argv)
