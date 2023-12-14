@@ -1,5 +1,11 @@
 # dl-iconfont
 
+## 0.4.0
+
+### Minor Changes
+
+- [#53](https://github.com/un-ts/dl-iconfont/pull/53) [`a8bdd72`](https://github.com/un-ts/dl-iconfont/commit/a8bdd7203ee5a7fdc4bac2a535971b6116ad0c87) Thanks [@JounQin](https://github.com/JounQin)! - feat: use `node-fetch` + `x-fetch` to replace `got`, follow latest `iconfont` website changes
+
 ## 0.3.1
 
 ### Patch Changes
