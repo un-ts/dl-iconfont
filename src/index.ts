@@ -57,11 +57,9 @@ export const fetchJsUrl = async ({
     { waitUntil: 'networkidle0' },
   )
 
-  const anchor = await page.waitForSelector('a#J_cdn_type_svgsymbol')
+  await page.waitForSelector('a#J_cdn_type_svgsymbol')
 
-  const copy = await page.$('.project-code-top .cover-btn:not(:last-child)')
-
-  if (copy) {
+  if (await page.$('.project-code-top .cover-btn:not(:last-child)')) {
     const refresh = await page.$('.project-code-top .cover-btn:last-child')
     await refresh!.click()
     const button = await page.waitForSelector(
@@ -75,6 +73,9 @@ export const fetchJsUrl = async ({
       },
     )
   }
+
+  // re-pull latest anchor element after refreshing
+  const anchor = await page.waitForSelector('a#J_cdn_type_svgsymbol')
 
   const jsUrl = await anchor!.evaluate(el => el.href)
 
