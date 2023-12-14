@@ -1,5 +1,11 @@
 # dl-iconfont
 
+## 0.4.1
+
+### Patch Changes
+
+- [#55](https://github.com/un-ts/dl-iconfont/pull/55) [`e1f47ce`](https://github.com/un-ts/dl-iconfont/commit/e1f47ce8887bcd7d2f4cd24bfd7e25a0958c0bc2) Thanks [@JounQin](https://github.com/JounQin)! - fix: re-pull latest anchor element after refreshing
+
 ## 0.4.0
 
 ### Minor Changes
