@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises'
 
-import got from 'got'
 import puppeteer from 'puppeteer'
+import { fetchApi } from 'x-fetch'
 
 const ICONFONT_URL = 'https://www.iconfont.cn/'
 
@@ -25,7 +25,7 @@ export const fetchJsUrl = async ({
   }
 
   const browser = await puppeteer.launch({
-    headless,
+    headless: headless && 'new',
     defaultViewport: VIEWPORT,
   })
 
@@ -57,16 +57,26 @@ export const fetchJsUrl = async ({
     { waitUntil: 'networkidle0' },
   )
 
-  if (await page.$('.project-code-mask')) {
+  const anchor = await page.waitForSelector('a#J_cdn_type_svgsymbol')
+
+  const copy = await page.$('.project-code-top .cover-btn:not(:last-child)')
+
+  if (copy) {
     const refresh = await page.$('.project-code-top .cover-btn:last-child')
-    if (refresh) {
-      await refresh.click()
-      await page.waitForSelector('.project-code-mask', { hidden: true })
-    }
+    await refresh!.click()
+    const button = await page.waitForSelector(
+      '.mx-modal-footer button.mp-e2e-button',
+    )
+    await button!.click()
+    await page.waitForSelector(
+      '.project-code-top .cover-btn:not(:last-child)',
+      {
+        hidden: true,
+      },
+    )
   }
 
-  const element = await page.waitForSelector('#J_cdn_type_svgsymbol')
-  const jsUrl = await element!.evaluate(el => el.textContent)
+  const jsUrl = await anchor!.evaluate(el => el.href)
 
   await browser.close()
 
@@ -81,5 +91,10 @@ export const download = async (url: string, file: string) => {
       throw new Error('invalid url for downloading')
     }
   }
-  return fs.writeFile(file, got.stream(url))
+  return fs.writeFile(
+    file,
+    await fetchApi(url, {
+      type: 'text',
+    }),
+  )
 }

@@ -53,6 +53,8 @@ npm i -g dl-iconfont
 
 #### Command
 
+`dli`, `dl-iconfont` and `iconfont-dl` are all available.
+
 ```sh
 Usage: dli [options] [downloadFile]
 
