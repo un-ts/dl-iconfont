@@ -10,7 +10,7 @@
   ],
   "funding": "https://opencollective.com/unts",
   "license": "MIT",
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "yarn@1.22.22",
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
   },
