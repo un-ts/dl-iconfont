@@ -54,7 +54,7 @@
     "commander": "^11.1.0",
     "dotenv": "^16.3.1",
     "node-fetch": "^3.3.2",
-    "puppeteer": "^21.6.1",
+    "puppeteer": "^21.11.0",
     "tslib": "^2.6.2",
     "x-fetch": "^0.1.3"
   },
