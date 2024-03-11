@@ -1,5 +1,11 @@
 # dl-iconfont
 
+## 0.4.2
+
+### Patch Changes
+
+- [#64](https://github.com/un-ts/dl-iconfont/pull/64) [`1324933`](https://github.com/un-ts/dl-iconfont/commit/1324933e998cb5ac2d1ce201c561dfebbd6137fd) Thanks [@JounQin](https://github.com/JounQin)! - fix: incorrect bin path
+
 ## 0.4.1
 
 ### Patch Changes
