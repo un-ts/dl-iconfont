@@ -15,9 +15,9 @@
     "node": "^14.18.0 || >=16.0.0"
   },
   "bin": {
-    "dli": "./bin/cli.js",
-    "dl-iconfont": "./bin/cli.js",
-    "iconfont-dl": "./bin/cli.js"
+    "dli": "./lib/cli.js",
+    "dl-iconfont": "./lib/cli.js",
+    "iconfont-dl": "./lib/cli.js"
   },
   "main": "lib/index.cjs",
   "module": "lib",
