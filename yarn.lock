@@ -2574,10 +2574,10 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
-"@sindresorhus/merge-streams@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/merge-streams/-/merge-streams-1.0.0.tgz#9cd84cc15bc865a5ca35fcaae198eb899f7b5c90"
-  integrity sha512-rUV5WyJrJLoloD4NDN1V1+LDMDWOa4OTsT4yYJwQNpTU6FWxkxHpL7eu4w+DmiH8x/EAM1otkPE1+LaspIbplw==
+"@sindresorhus/merge-streams@^2.1.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/merge-streams/-/merge-streams-2.3.0.tgz#719df7fb41766bc143369eaa0dd56d8dc87c9958"
+  integrity sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==
 
 "@size-limit/file@^10.0.2":
   version "10.0.3"
@@ -3672,10 +3672,10 @@ chevrotain@^4.1.1:
   dependencies:
     regexp-to-ast "0.4.0"
 
-chokidar@^3.5.3:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
-  integrity sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==
+chokidar@^3.5.3, chokidar@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.6.0.tgz#197c6cc669ef2a8dc5e7b4d97ee4e092c3eb0d5b"
+  integrity sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==
   dependencies:
     anymatch "~3.1.2"
     braces "~3.0.2"
@@ -5590,12 +5590,12 @@ globby@^11.0.0, globby@^11.0.2, globby@^11.1.0:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
-globby@^14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/globby/-/globby-14.0.0.tgz#ea9c062a3614e33f516804e778590fcf055256b9"
-  integrity sha512-/1WM/LNHRAOH9lZta77uGbq0dAEQM+XjNesWwhlERDVenqothRbnzTrL3/LrIoEPPjeUHC3vrS6TwoyxeHs7MQ==
+globby@^14.0.0, globby@^14.0.1:
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-14.0.1.tgz#a1b44841aa7f4c6d8af2bc39951109d77301959b"
+  integrity sha512-jOMLD2Z7MAhyG8aJpNOpmziMOP4rPLcc95oQPKXBazW82z+CEgPFBQvEpRUa1KeIMUJo4Wsm+q6uzO/Q/4BksQ==
   dependencies:
-    "@sindresorhus/merge-streams" "^1.0.0"
+    "@sindresorhus/merge-streams" "^2.1.0"
     fast-glob "^3.3.2"
     ignore "^5.2.4"
     path-type "^5.0.0"
@@ -6280,7 +6280,7 @@ jackspeak@^2.3.5:
   optionalDependencies:
     "@pkgjs/parseargs" "^0.11.0"
 
-jiti@^1.19.1:
+jiti@^1.19.1, jiti@^1.21.0:
   version "1.21.0"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.0.tgz#7c97f8fe045724e136a397f7340475244156105d"
   integrity sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==
@@ -6503,10 +6503,10 @@ lilconfig@2.1.0, lilconfig@^2.0.5, lilconfig@^2.1.0:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
   integrity sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==
 
-lilconfig@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-3.0.0.tgz#f8067feb033b5b74dab4602a5f5029420be749bc"
-  integrity sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==
+lilconfig@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-3.1.1.tgz#9d8a246fa753106cfc205fd2d77042faca56e5e3"
+  integrity sha512-O18pf7nyvHTckunPWCV1XUNXU1piu01y2b7ATJ0ppkUkk8ocqVWBrYjJBCwHDjD/ZWcfyrA0P4gKhzWGi5EINQ==
 
 lines-and-columns@^1.1.6:
   version "1.2.4"
@@ -9758,15 +9758,16 @@ size-limit@^10.0.2:
     nanospinner "^1.1.0"
     picocolors "^1.0.0"
 
-size-limit@^11.0.1:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-11.0.1.tgz#e34ab3302b83833843d578e70a2bf3c6da29f123"
-  integrity sha512-6L80ocVspWPrhIRg8kPl41VypqTGH8/lu9e6TJiSJpkNLtOR2h/EEqdAO/wNJOv/sUVtjX+lVEWrzBpItGP+gQ==
+size-limit@^11.1.2:
+  version "11.1.2"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-11.1.2.tgz#cef39f51d3557e3e24080528caf2df1856ecaaa7"
+  integrity sha512-W9V/QR98fiLgGg+S77DNy7usExpz7HCdDAqm2t2Q77GWCV//wWUC6hyZA9QXKk1x6bxMMTzq1vmncw5Cve/43w==
   dependencies:
     bytes-iec "^3.1.1"
-    chokidar "^3.5.3"
-    globby "^14.0.0"
-    lilconfig "^3.0.0"
+    chokidar "^3.6.0"
+    globby "^14.0.1"
+    jiti "^1.21.0"
+    lilconfig "^3.1.1"
     nanospinner "^1.1.0"
     picocolors "^1.0.0"
 
