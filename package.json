@@ -66,7 +66,7 @@
     "size-limit": "^11.0.1",
     "size-limit-preset-node-lib": "^0.3.0",
     "tsx": "^4.6.2",
-    "type-coverage": "^2.27.0",
+    "type-coverage": "^2.29.7",
     "typescript": "^5.3.3",
     "yarn-deduplicate": "^6.0.2"
   },
