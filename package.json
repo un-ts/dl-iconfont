@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "commander": "^11.1.0",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.4.7",
     "node-fetch": "^3.3.2",
     "puppeteer": "^21.6.1",
     "tslib": "^2.6.2",
